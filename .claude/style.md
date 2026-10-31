@@ -2,7 +2,7 @@
 
 experience: experienced
 depth: balanced
-tone: professional
+tone: institutional
 coverage:
 
 <!--
