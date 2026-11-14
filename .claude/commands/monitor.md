@@ -20,6 +20,9 @@ The user invoked `/monitor`. This is the position-tracking and forward-looking c
 | 4 | `thesis-tracker` (Anthropic) | create or update an investment thesis with new data points |
 | 5 | `catalyst-calendar` (Anthropic) | forward-looking calendar of upcoming catalysts for a name, watchlist, or sector |
 | 6 | `morning-note` (Anthropic) | desk-style morning note for the day's flow across the watchlist |
+| 7 | `trade-postmortem` | grade a closed trade or a year of trades: decision vs. outcome, plan adherence, bias evidence |
+| 8 | `risk-stress-test` | portfolio loss in crash replays, VaR, correlation spike, liquidity vs. a drawdown budget |
+| 9 | `position-ladder` | staged-entry plan for one holding: floor, ceiling, rungs, trim cycle, thesis-break gate |
 
 End with: *"Or just describe what you want — I'll pick the right lens."*
 
@@ -31,6 +34,9 @@ End with: *"Or just describe what you want — I'll pick the right lens."*
 - 4 / thesis-tracker → `anthropic-equity-research-skills/thesis-tracker/SKILL.md`
 - 5 / catalyst-calendar → `anthropic-equity-research-skills/catalyst-calendar/SKILL.md`
 - 6 / morning-note → `anthropic-equity-research-skills/morning-note/SKILL.md`
+- 7 / trade-postmortem → `community-skills/monitor/trade-postmortem.md`
+- 8 / risk-stress-test → `community-skills/monitor/risk-stress-test.md`
+- 9 / position-ladder → `community-skills/monitor/position-ladder.md`
 - Free-text → match to the closest skill; ask one clarifying question only if truly ambiguous.
 
 Read the chosen file and execute its workflow. If the skill needs a universe and the user didn't supply one, default to `community-skills/monitor/watchlist.md` contents.
