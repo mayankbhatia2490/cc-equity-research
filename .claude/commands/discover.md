@@ -20,6 +20,7 @@ The user invoked `/discover`. This is the idea-discovery category.
 | 4 | `gov-contracts` | federal contract awards as a leading revenue indicator |
 | 5 | `idea-generation` | systematic screens — value / growth / quality / short / special-situation |
 | 6 | `sector-overview` | sector-level state of play |
+| 7 | `backtest-expert` | stress-test a rule-based idea or screen before trusting it |
 
 End with: *"Or just describe what you want — I'll pick the right lens."*
 
@@ -31,6 +32,7 @@ End with: *"Or just describe what you want — I'll pick the right lens."*
 - 4 / gov-contracts → `community-skills/discover/gov-contracts.md`
 - 5 / idea-generation → `anthropic-equity-research-skills/idea-generation/SKILL.md`
 - 6 / sector-overview → `anthropic-equity-research-skills/sector-overview/SKILL.md`
+- 7 / backtest-expert → `community-skills/discover/backtest-expert.md`
 - Free-text → match to the closest skill; ask one clarifying question only if truly ambiguous.
 
 Read the chosen file and execute its workflow.

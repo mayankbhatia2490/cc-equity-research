@@ -23,6 +23,10 @@ The user invoked `/monitor`. This is the position-tracking and forward-looking c
 | 7 | `trade-postmortem` | grade a closed trade or a year of trades: decision vs. outcome, plan adherence, bias evidence |
 | 8 | `risk-stress-test` | portfolio loss in crash replays, VaR, correlation spike, liquidity vs. a drawdown budget |
 | 9 | `position-ladder` | staged-entry plan for one holding: floor, ceiling, rungs, trim cycle, thesis-break gate |
+| 10 | `position-sizer` | share count from a stop and a risk budget; fixed fractional, ATR, half-Kelly, caps |
+| 11 | `pre-trade-gate` | checklist before a manual entry: plan, stop, size, revenge window, breaker |
+| 12 | `circuit-breaker` | daily / weekly / monthly realized-loss limits and losing-streak cooldown |
+| 13 | `trade-journal` | local ledger from idea to closed position; feeds the gate, breaker and post-mortem |
 
 End with: *"Or just describe what you want — I'll pick the right lens."*
 
@@ -37,6 +41,10 @@ End with: *"Or just describe what you want — I'll pick the right lens."*
 - 7 / trade-postmortem → `community-skills/monitor/trade-postmortem.md`
 - 8 / risk-stress-test → `community-skills/monitor/risk-stress-test.md`
 - 9 / position-ladder → `community-skills/monitor/position-ladder.md`
+- 10 / position-sizer → `community-skills/monitor/position-sizer.md`
+- 11 / pre-trade-gate → `community-skills/monitor/pre-trade-gate.md`
+- 12 / circuit-breaker → `community-skills/monitor/circuit-breaker.md`
+- 13 / trade-journal → `community-skills/monitor/trade-journal.md`
 - Free-text → match to the closest skill; ask one clarifying question only if truly ambiguous.
 
 Read the chosen file and execute its workflow. If the skill needs a universe and the user didn't supply one, default to `community-skills/monitor/watchlist.md` contents.
