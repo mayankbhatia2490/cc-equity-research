@@ -56,6 +56,7 @@ Files live at `community-skills/<area>/<skill>.md`. Organized into four areas. W
 - **`supply-chain`** — Hidden champions upstream/downstream of a theme
 - **`alt-plays`** — Better-valued expressions of a thesis you already hold
 - **`gov-contracts`** — Federal contract awards as a leading revenue indicator
+- **`backtest-expert`** — Stress-test a rule-based idea: blocking gates, five-part scorecard, out-of-sample checks
 
 #### `analyze/` — Company analysis
 - **`business-model`** — How the company makes money, why customers stay, how to detect pivots
@@ -63,11 +64,19 @@ Files live at `community-skills/<area>/<skill>.md`. Organized into four areas. W
 - **`financial-forensics`** — FCF gap, SBC dilution, channel stuffing, non-GAAP widening
 - **`reporting-quality`** — Metric definition drift, SEC cross-checks, selective omission
 - **`management`** — Capital allocation track record, compensation, insider patterns
+- **`bear-case`** — Deliberately one-sided short thesis, downside math, and what would prove the bear wrong
 
 #### `monitor/` — Position tracking
 - **`watchlist`** — User-maintained list of tickers and themes being tracked
 - **`thesis-check`** — Quarterly review: are the original reasons for owning still intact?
 - **`event-radar`** — Material events since last review: 8-Ks, deals, exec changes
+- **`trade-postmortem`** — Grade a closed trade or a year of trades: decision vs. outcome, plan adherence, bias evidence
+- **`risk-stress-test`** — Portfolio loss in crash replays, VaR, correlation spike, liquidity vs. a drawdown budget
+- **`position-ladder`** — Staged-entry plan for one holding: floor, ceiling, rungs, trim cycle, thesis-break gate
+- **`position-sizer`** — Share count from a stop and a risk budget: fixed fractional, ATR, half-Kelly, portfolio caps
+- **`pre-trade-gate`** — Checklist before a manual entry: written plan, stop, size, revenge window, breaker (GO / NO_GO)
+- **`circuit-breaker`** — Daily, weekly, monthly realized-loss limits and losing-streak cooldown (TRADING_ALLOWED / COOLDOWN / HALTED)
+- **`trade-journal`** — Local ledger from IDEA to CLOSED with realized P&L; feeds the gate, breaker and post-mortem
 
 #### `economic-research/` — Macro & economic research
 - **`yield-curve`** — Rate cycle, inversion/re-steepening, recession signals

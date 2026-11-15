@@ -23,6 +23,7 @@ The user invoked `/analyze`. This is the single-company deep-work category.
 | 7 | `earnings-preview` (Anthropic) | pre-print: what to watch on the upcoming call |
 | 8 | `earnings-analysis` (Anthropic) | post-print: review and writeup |
 | 9 | `model-update` (Anthropic) | update a financial model after new data lands |
+| 10 | `bear-case` | deliberately one-sided short thesis with downside math and thesis-killers |
 
 End with: *"Or just describe what you want — I'll pick the right lens."*
 
@@ -39,6 +40,7 @@ If the user did not name a ticker, ask for one before loading any skill (this ca
 - 7 / earnings-preview → `anthropic-equity-research-skills/earnings-preview/SKILL.md`
 - 8 / earnings-analysis → `anthropic-equity-research-skills/earnings-analysis/SKILL.md`
 - 9 / model-update → `anthropic-equity-research-skills/model-update/SKILL.md`
+- 10 / bear-case → `community-skills/analyze/bear-case.md`
 - Free-text → match to the closest skill; ask one clarifying question only if truly ambiguous.
 
 Read the chosen file and execute its workflow.

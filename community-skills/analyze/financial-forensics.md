@@ -30,6 +30,31 @@ For each pattern, score Clean / Watch / Concerning / Red Flag and cite specific 
 | **5. Working-capital demand signal** | Deferred revenue trajectory; A/R growth vs. revenue growth. | Clean: deferred revenue growing in line with or faster than revenue. Concerning: deferred revenue contracting; A/R growing materially faster than revenue. |
 | **6. Capitalization choices** | Capitalized software/R&D as % of total R&D spend, trended. Year-over-year change. | Clean: capitalization rate stable and modest. Concerning: rising capitalization rate that coincides with an EPS-beat quarter. |
 
+### Step 2b: Composite scores (optional second pass)
+
+Run when two or more patterns flag, or when a single pattern is ambiguous. Use fiscal-year rows (current vs. prior year), show every input, and skip banks and insurers. These models were calibrated on older US samples: treat them as corroborating flags, not verdicts.
+
+**Beneish M-score** (earnings manipulation): `M = −4.84 + 0.920·DSRI + 0.528·GMI + 0.404·AQI + 0.892·SGI + 0.115·DEPI − 0.172·SGAI + 4.679·TATA − 0.327·LVGI`
+
+| Index | Definition (current year t vs. prior t−1) |
+|---|---|
+| DSRI | (receivables ÷ sales)t ÷ (receivables ÷ sales)t−1 |
+| GMI | gross margint−1 ÷ gross margint |
+| AQI | [1 − (current assets + net PP&E) ÷ total assets]t ÷ same t−1 |
+| SGI | salest ÷ salest−1 |
+| DEPI | [depreciation ÷ (depreciation + net PP&E)]t−1 ÷ same t |
+| SGAI | (SG&A ÷ sales)t ÷ (SG&A ÷ sales)t−1 |
+| LVGI | [(current liabilities + long-term debt) ÷ total assets]t ÷ same t−1 |
+| TATA | (income from continuing operations − operating cash flow) ÷ total assetst |
+
+A score above −1.78 flags a likely manipulator (stricter screens use −2.22). A company with every index at 1 and TATA at 0 scores −2.48, which is the neutral baseline. TATA and DSRI carry the most weight.
+
+**Piotroski F-score** (financial strength, 0–9, one point each): positive ROA; positive operating cash flow; ROA up YoY; operating cash flow greater than net income; long-term debt to assets down; current ratio up; no new shares issued; gross margin up; asset turnover up. 8–9 strong, 0–2 weak.
+
+**Altman Z-score** (distress): `Z = 1.2·WC/TA + 1.4·RE/TA + 3.3·EBIT/TA + 0.6·market cap/TL + 1.0·sales/TA`. Above 2.99 safe, 1.81–2.99 grey zone, below 1.81 distress. For non-manufacturers use `Z″ = 6.56·WC/TA + 3.26·RE/TA + 6.72·EBIT/TA + 1.05·book equity/TL` (above 2.6 safe, 1.1–2.6 grey, below 1.1 distress).
+
+Present them as one line each under the six-pattern table, naming which inputs drove any flag. Methods: Beneish (1999), Piotroski (2000), Altman (1968); see `community-skills/THIRD_PARTY_NOTICES.md`.
+
 ### Step 3: Cross-check against disclosure
 
 For any pattern scored Concerning or Red Flag:

@@ -10,9 +10,9 @@
 
 Three components make it work:
 
-1. **Skill library.** 24 analysis workflows — Anthropic's official Apache-licensed equity-research bundle (9 skills) plus a community-maintained library (15 skills). Covers idea discovery, single-company deep dives, position monitoring, and macro research.
+1. **Skill library.** 33 analysis workflows — Anthropic's official Apache-licensed equity-research bundle (9 skills) plus a community-maintained library (24 skills). Covers idea discovery, single-company deep dives, position monitoring, and macro research.
 
-2. **Accessible interface.** Claude speaks to you according to your financial proficiency and preferences — adapting tone, depth, and jargon density to match a sell-side analyst, a portfolio manager, a retail investor, or an academic economist. Four unified slash commands — `/discover`, `/analyze`, `/monitor`, `/macro` — auto-route plain-language requests across all 24 skills.
+2. **Accessible interface.** Claude speaks to you according to your financial proficiency and preferences — adapting tone, depth, and jargon density to match a sell-side analyst, a portfolio manager, a retail investor, or an academic economist. Four unified slash commands — `/discover`, `/analyze`, `/monitor`, `/macro` — auto-route plain-language requests across all 33 skills.
 
 3. **Single data MCP.** `drillr` consolidates everything the skills need: structured financial metrics, SEC filings, earnings-call transcripts, company ontology (suppliers / customers / competitors), alternative data (federal contracts, hiring, patents, trade flows), and macro / market context. Covers US and Japanese equities. Generous free quota for individual users.
 
@@ -80,7 +80,7 @@ Claude reads both at session start, applies them every turn, and absorbs prefere
 
 **Anthropic bundle** (`anthropic-equity-research-skills/`) — nine workflow templates vendored from [`anthropics/financial-services`](https://github.com/anthropics/financial-services) (Apache 2.0): `initiating-coverage`, `earnings-preview`, `earnings-analysis`, `model-update`, `morning-note`, `catalyst-calendar`, `thesis-tracker`, `idea-generation`, `sector-overview`.
 
-**Community extension** (`community-skills/`) — fifteen analyst-contributed lenses across four areas: `discover/` (themes, supply-chain, alt-plays, gov-contracts), `analyze/` (business-model, earnings-scorecard, financial-forensics, reporting-quality, management), `monitor/` (watchlist, thesis-check, event-radar), `economic-research/` (yield-curve, trade-flows, labor-market).
+**Community extension** (`community-skills/`) — twenty-four analyst-contributed lenses across four areas: `discover/` (themes, supply-chain, alt-plays, gov-contracts, backtest-expert), `analyze/` (business-model, earnings-scorecard, financial-forensics, reporting-quality, management, bear-case), `monitor/` (watchlist, thesis-check, event-radar, trade-postmortem, risk-stress-test, position-ladder, position-sizer, pre-trade-gate, circuit-breaker, trade-journal), `economic-research/` (yield-curve, trade-flows, labor-market).
 
 Each skill is a short markdown file — read one to see exactly what it does.
 
